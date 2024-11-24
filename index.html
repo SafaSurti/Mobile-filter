@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Filter</title>
+    
+</head>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Mobile Brand and Model Filter</h1>
+
+    <label for="brand"><h2>Select Brand:</h2></label>
+    <select style="border: 4px solid rgb(4, 70, 70); background-color: aqua; width: 200px; height: 30px;" id="brand" onchange="populateModels()">
+        <option value="">Select Brand</option>
+        <option value="iphone">iPhone</option>
+        <option value="xiomi">xiomi</option>
+        <option value="realme">realme</option>
+        <option value="samsung">Samsung</option>
+    </select>
+
+    <label for="model"><h2>Select Model:</h2></label>
+    <select style="background-color: aqua; width: 200px; height: 30px;border: 4px solid rgb(4, 70, 70);" id="model">
+        <option value="">Select Model</option>
+    </select>
+
+    <button style="border: 4px solid rgb(4, 70, 70);background-color: aqua; height: 30px;width: 100px;" onclick="searchMobile()">Search</button>
+
+    <div style="background-color: rgb(243, 208, 166);"  id="result" style="margin-top: 20px;"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
